@@ -1,11 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Odin Sign Up Form</title>
 </head>
+
 <body>
-    
+    <div class="container">
+
+        <!-- IMAGE CONTAINER -->
+
+        <div class="side-image-container">
+            <div class="logo">
+                <h1>ODIN</h1>
+                <img src="images/logos/odin-logo.png" alt="Odin Logo">
+            </div>
+
+            <div>Photo by <a href="/">Halie West</a> on <a href="">Unsplash</a></div>
+
+        </div>
+
+        <!-- SIGN UP CONTAINER -->
+
+        <div class="sign-up-container">
+
+            <div class="header">
+                <h2>
+                    This is not a real online service! You know you need something like this in your life to help you
+                    relize your deepest dreams.
+                    Sign up <em>now</em> to get started.
+                </h2>
+                <h2>
+                    You <em>know</em> you want to.
+                </h2>
+            </div>
+
+            <div class="content">
+
+                <h2>Let's do this!</h2>
+
+                <form action="/submit-signup" method="post">
+
+                    <label for="user-first-name">First Name</label>
+                    <input type="text" name="user-first-name" id="first-name">
+
+                    <label for="user-last-name">Last Name</label>
+                    <input type="text" name="user-last-name" id="last-name">
+
+                    <label for="user-email">Email</label>
+                    <input type="email" name="user-email" id="user-email">
+
+                    <label for="user-phone-number">Phone Number</label>
+                    <input type="number" name="user-phone-number" id="phone-number">
+
+                    <label for="user-pwd">Password</label>
+                    <input type="password" name="user-pwd" id="password">
+
+                    <label for="user-pwd-confirm">Confirm Password</label>
+                    <input type="password" name="user-pwd-confirm" id="confirm-password">
+
+            </div>
+
+            <div class="footer">
+
+                <button type="submit">Create Account</button>
+
+                </form>
+
+                <p>Already have an account? <a href="/">Log in</a></p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    </div>
 </body>
+
 </html>
