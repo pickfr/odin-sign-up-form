@@ -120,13 +120,53 @@ form{
     flex-direction: column;
 }
 
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid #315fdd;
+    box-sizing: border-box;
+    box-shadow: 0 3px 2px #0000002a;
+}
+
+input:valid{
+    border: 2px solid #24c24b;
+}
+
+input:invalid.was-selected{
+    border: 2px solid #c24424;
+}
+
+input.error{
+    border: 2px solid #c24424;
+}
+
+.error-text{
+    display: none;
+    color: #c24424;
+    font-size: 0.75rem;
+}
+
+input.error+.error-text{
+    display: inline-block;
+}
+
 button{
     background: #5b723d;
     color: #ffffff;
     font-size: 1rem;
     font-weight: 700;
     padding: 0.75rem 3rem 0.75em 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem; 
     border-radius: 8px;
     border: none;
-    box-shadow: 0 4px 2px #0000002f;
+    box-shadow: 0 4px 3px #0000001a;
 }

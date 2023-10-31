@@ -49,33 +49,34 @@
 
                     
                     <div class="input-group">
-                        <label for="user-first-name">First Name</label>
-                        <input type="text" name="user-first-name" id="first-name">
+                        <label for="first-name">First Name*</label>
+                        <input autocomplete="given-name" type="text" minlength="5" name="user-first-name" id="first-name" required>
                     </div>
 
                     <div class="input-group">
-                        <label for="user-last-name">Last Name</label>
-                        <input type="text" name="user-last-name" id="last-name">
+                        <label for="last-name">Last Name*</label>
+                        <input autocomplete="additional-name" type="text" name="user-surname" id="last-name" required>
                     </div>
 
                     <div class="input-group">
-                        <label for="user-email">Email</label>
-                        <input type="email" name="user-email" id="user-email">
+                        <label for="email">Email*</label>
+                        <input autocomplete="email" type="email" name="user-email" id="email" required>
                     </div>
 
                     <div class="input-group">
-                        <label for="user-phone-number">Phone Number</label>
-                        <input type="number" name="user-phone-number" id="phone-number">
+                        <label for="phone-number">Phone Number*</label>
+                        <input autocomplete="tel" type="number" name="user-phone-number" id="phone-number" required>
                     </div>
 
                     <div class="input-group">
-                        <label for="user-pwd">Password</label>
-                        <input type="password" name="user-pwd" id="password">
+                        <label for="password">Password*</label>
+                        <input autocomplete="new-password" type="password" minlength="5" name="user-pwd" id="password" required>
+                        <span class="error-text">*Passwords do not match.</span>
                     </div>
 
                     <div class="input-group">
-                        <label for="user-pwd-confirm">Confirm Password</label>
-                        <input type="password" name="user-pwd-confirm" id="confirm-password">
+                        <label for="confirm-password">Confirm Password*</label>
+                        <input autocomplete="new-password" type="password" minlength="5" name="user-pwd-confirm" id="confirm-password" required>
                     </div>
 
             </div>
